@@ -412,3 +412,26 @@ p {
     transform: translateY(0) scale(1);
   }
 }
+
+.ending-photo{
+    width:min(420px,90vw);
+    aspect-ratio:4/5;
+    object-fit:cover;
+    border-radius:28px;
+    margin:35px auto;
+    display:block;
+    box-shadow:0 25px 70px rgba(0,0,0,.4);
+    animation:zoomPhoto 15s ease-in-out infinite alternate;
+}
+
+.signature{
+    margin-top:30px;
+    font-family:'Great Vibes', cursive;
+    font-size:48px;
+    color:#ffd8cf;
+}
+
+@keyframes zoomPhoto{
+    from{transform:scale(1);}
+    to{transform:scale(1.05);}
+}
