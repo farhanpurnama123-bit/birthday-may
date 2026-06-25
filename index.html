@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, May Indah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+  <div class="rain"></div>
+  <div class="petals" id="petals"></div>
+
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button class="music-floating" onclick="toggleMusic()">
+    <span id="musicIcon">▶</span>
+    <span id="musicText">Our Song</span>
+  </button>
+
+  <section class="cover" id="cover">
+    <div class="cover-content">
+      <p class="overline">Ucapan Ulang Tahun untuk</p>
+      <h1>May Indah</h1>
+      <p class="cover-date">Meskipun terlambat, tapi aku tetep pengen ngasih kamu hadiah May, kebetulan hari ini tanggal 26 May</p>
+      <button class="open-btn" onclick="openStory()">Open Story</button>
+    </div>
+  </section>
+
+  <main id="story">
+
+    <section class="hero reveal">
+      <p class="overline">Happy Birthday yang Ke-25 Tahun</p>
+      <h2>May Indah Sulistyowati, teman latsarku yang paling kufavoritkan</h2>
+      <p>
+        Aku bikin website kecil ini bukan cuma buat sekedar ngucapin selamat ulang tahun
+        ke kamu atau sekedar buat kado ultahmu may, tapi aku pengen sedikit cerita, minta maaf, memberikan do'a 
+        baik, mengucapkan rasa syukur, serta ucapan terimakasih yang sebesar-besarnya karena keberadaanmu
+        di dalam hidupku Mayy. Aku harap ini bukan yang terakhir kalinya aku memberi ucapan-ucapan kecil seperti ini 
+        ke kamu, May. Tapi, kalau semua yang kulakukan sampai saat ini ternyata justru menjadi sebuah gangguan buat kamu, dengan
+        senang hati aku akan menjadikan ini yang terakhir kalinya kok May.
+      </p>
+    </section>
+
+    <section class="cake-section reveal">
+      <p class="overline">Harapan Buat Dirimu Sendiri</p>
+      <h2>Sebelum lanjut, tiup lilinnya dulu ya mayy.</h2>
+
+      <div class="cake-card" onclick="blowCandle()">
+        <img id="cakeImage" src="images/kue-nyala.jpg" alt="Kue ulang tahun">
+        <div class="tap-hint">Klik untuk meniup lilin May</div>
+      </div>
+
+      <p id="cakeText" class="cake-text">
+        Lilinnya masih nyala nih May. Tutup mata kamu sebentar yaa, lalu ucapkan harapan dan doa terbaik buat diri kamu sendiri May.
+      </p>
+    </section>
+
+    <section class="story-section reveal">
+      <p class="overline">Yang Pertama</p>
+      <h2>Hari Pertama Kita Bertemu</h2>
+      <p>
+        Kamu tau gak May hal apa yang paling aku benci dalam pekerjaanku ini? Ya, aku paling benci
+        sama militer. Sejak awal aku benci kalau harus melakukan hal-hal yang dimiliterkan. Seperti 
+        halnya latsar kemarin, aku paling benci sama klasikalnya, aku paling benci juga sama PBB, apel, dan semacamnya.
+        Tapi, satu minggu itu bener-bener berbeda. Satu minggu itu jadi salah satu waktu yang paling bikin aku bahagia, satu 
+        minggu yang paling kufavoritkan, dan satu minggu yang mengubah hidupku. Aku suka sama kegiatan militer di minggu itu. 
+        Aku suka PBB di waktu itu. Semua itu karena ada kamu di dalamnya May :) 
+      </p>
+      <p>
+        Selain itu, aku juga jadi suka sama kipas angin, aku suka warna hitam, aku suka Rindam, aku suka Magelang, aku pengen 
+        latsar lagi, aku gak sabar buat Komcad dan ketemu kamu lagi. Bahkan, lagu "Shape of My Heart" yang aku putar ini aku 
+        puter setiap hari karena ini satu-satunya lagu yang mengingatkanku sama latsar, dan latsar adalah satu-satunya moment 
+        yang menghubungkan aku sama kamu.
+        </satu-satunya>
+      </p>
+    </section>
+
+    <section class="timeline reveal">
+      <p class="overline">Secuil Momen</p>
+      <h2>4 Momen Kecil yang Bikin Aku Cinta sama Kamu</h2>
+
+      <div class="timeline-item">
+        <div class="dot">♡</div>
+        <div>
+          <h3>Pertama Kali Notice Kamu secara Langsung</h3>
+          <p>Waktu pertama kali notice kamu secara langsung, entah kenapa aku bener-bener seperti liat manusia yang berbeda, entah kenapa kamu
+            keliatan lebih cantik dari semua orang yang ada di kelas itu, entah kenapa kamu keliatan lebih bersinar daripada semua orang yang
+            ada di kelas itu. Dan entah kenapa tiba-tiba kamu jadi orang yang paling sulit kuajak ngobrol saat itu. Waktu itu aku bener-bener
+            terpesona sama kamu hahaha. Aku bener-bener bersyukur Allah sudah menciptakan manusia seindah kamu. 
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="dot">♡</div>
+        <div>
+          <h3>Moment Pertama Kali Aku Meleleh sama Senyum Kamu</h3>
+          <p>Waktu apel malam itu, waktu aku lagi nyiapin barisan, aku gak sengaja noleh ke arah kamu dan liat kamu ketawa. 
+            Bener-bener semua keteganganku hilang seketika waktu itu, aku bener-bener ga merasakan sedikitpun energi negatif
+            dari ketawa kamu may. Senyum dan ketawa kamu bener-bener bikin orang yang ngeliatnya jadi teduh. Sejak itu juga
+            aku jadi ga kuat natap kamu lama-lama, karena senyum kamu bener-bener bikin meleleh wkwk. Seakan-akan aku pengen
+            mengerahkan semuanya demi melindungi senyum kamu. Semoga senyum indah kamu tidak pernah pudar selamanya May.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="dot">♡</div>
+        <div>
+          <h3>Moment Waktu Aku Mulai Jatuh Cinta sama Kamu</h3>
+          <p>Kemarin aku udah cerita garis besarnya, intinya berkat kamu aku bisa melewati presentasi aktualisasi kemarin
+            dengan baik. Aku bener-bener berterimakasih sama kamu Mayy. Kalau gaada kamu, mungkin aku bakal gelagapan waktu
+            presentasi. Kamu bener-bener hebat Mayy, bisa selalu memberikan energi positif kepada orang lain. Dan puncaknya, aku bener-bener
+            seneng banget waktu kamu ngevideoin aku waktu penyerahan piagam penghargaan. Seolah aku punya temen yang menemani aku dari 0
+            sampai aku berhasil. Ga ada moment yang lebih istimewa daripada itu.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="dot">♡</div>
+        <div>
+          <h3>Moment Waktu Kita Ketemu di Cafe</h3>
+          <p>Sebenernya bener-bener moment kecil, tapi sangat berarti bagiku. Itu pertama kali aku liat kamu 
+            di luar kegiatan latsar. Aku bener-bener ga bisa berhenti memalingkan pandanganku ke kamu. Malai dari 
+            outfit, bahkan makeupnya bener-bener cocok banget buat kamu. Lagi-lagi aku mikir kok bisa selama latsar
+            waktu daring aku ga sadar ada wanita secantik ini di kelompokku :) Terus waktu di cafe itu aku juga beberapa
+            kali ngejokes dan kamu selalu ketawa sama jokesku, itu bener-bener diriku di pikiranku lompat2 kegirangan wkwkw.
+            <table>
+
+          </table></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery reveal">
+      <p class="overline">Sedikit Memori, entah kenapa kualitas fotonya jadi jelek bgt wkwk, tapi karena aku ngejar deadline
+        jam 00.00 jadi biarlah
+      </p>
+      <h2>Hahaha, aku sangat berharap aku bisa membuat ini versi foto kita, walaupun ga mungkin sii
+      </h2>
+
+      <div class="polaroid-row">
+        <div class="polaroid"><img src="images/foto1.jpg"><span>Waktu Zoom</span></div>
+        <div class="polaroid"><img src="images/foto2.jpg"><span>Hari Olahraga Bebas</span></div>
+        <div class="polaroid"><img src="images/foto3.jpg"><span>Hari Terakhir</span></div>
+        <div class="polaroid"><img src="images/foto4.jpg"><span>Waktu Meet di Sakopi</span></div>
+      </div>
+    </section>
+
+    <section class="quote reveal">
+      <p>
+        “Jika kamu mencintai seseorang maka lepaskanlah ia, jika ia kembali padamu,
+        maka ia memang milikmu. Jika ia tidak kembali, maka sejak awal ia memang
+        bukan untukmu” -- Ali bin Abi Thalib
+      </p>
+    </section>
+
+    <section class="wish reveal">
+      <p class="overline">Harapan Ulang Tahun</p>
+      <h2>Doaku Untuk May</h2>
+      <p>
+        Selamat ulang tahun yaa May Indah. Semoga di usia kamu yang ke-25 ini, kamu bisa menjadi lebih baik
+        dalam setiap halnya. Semoga kamu selalu diberikan kesehatan, semoga semua urusanmu dilancarkan dan
+        dimudahkan, dan semoga kamu selalu dipertemukan dengan hal-hal baik dan orang-orang baik. Ga pernah
+        bosen aku tiap hari ngedo'ain kamu dengan template do'a yang sama wkwkw. 
+      </p>
+      <p>
+        Semoga kamu makin menguasai bidang kamu yaa May. Semoga kamu bisa jadi salah satu Radiografer terbaik
+        yang selalu "Berakhlak" dalam bekerja. Pokoknya semoga pekerjaan kamu selalu berkah may, semoga capekmu
+        berubah menjadi hal-hal yang kamu cita-citakan yang akan terwujud. Semoga kamu tidak pernah bertemu pasien
+        yang membuat kamu tidak nyaman dan melukai hati kamu. Semoga kamu bisa melewati pekerjaan Radiologi tersulit
+        maupun jenis2 rontgen yang belum pernah kamu kerjaan sebelumnya dengan lancarr. Semoga kamu jarang piket di 
+        hari libur supaya kamu bisa menghabiskan waktu liburmu dengan tenang dan happy.
+      </p>
+      <p>
+        Aku mungkin ga pinter nulis kata-kata yang bagus, aku cuma bisa ngomong apa adanya. Bahkan mungkin semua kata 
+        katamu justru bikin kamu risih dan ga nyaman. Tapi aku bener-bener berharap semoga hidup kamu selalu dipenuhi hal-hal baik. 
+        Dan setidaknya aku harap hadiah ulang tahun dariku ini bisa jadi salah satu alasan kecil kamu tersenyum hari ini.
+      </p>
+    </section>
+
+    <section class="letter reveal">
+      <p class="overline">Surat Kecil</p>
+      <h2>Untuk May Indah</h2>
+
+      <div class="letter-box">
+        <p>
+          May, pokoknya aku mau mengucapkan banyak2 terima kasih sudah karena sudah terlahir
+          ke dunia ini. Terimakasih telah berjuang keras sampai bisa sejauh ini. Terimakasih karena
+          telah berusaha sampai di titik ini, di titik dimana kamu bisa jadi PNS Kemhan TNI AD, khususnya
+          sebagai Radiografer di RST Tk. II Dr. Soedjono Magelang, karena berkat itu aku bisa ketemu dan kenal 
+          kamu, aku bener-bener mensyukuri pertemuan kita dalam lubuk hatiku yang paling dalam. 
+        </p>
+        <p>
+          Entah siapapun jodohmu nanti, aku do'akan semoga kamu bisa bertemu dengan pria yang baik, yang mapan,
+          yang bertanggung jawab, dan yang mencintai kamu dengan sangat tulus serta mampu membahagiakan kamu 
+          selamanya. 
+        </p>
+        <p>
+          Pokoknya aku berharap mulai sekarang sampai selama-lamanya kamu selalu bahagia mayyyy.
+        </p>
+      </div>
+    </section>
+
+    <section class="gift reveal">
+      <p class="overline">Gift Dariku</p>
+      <h2>Hadiah kecil dari aku</h2>
+      <p>
+        Sejujurnya aku berharap bisa ngasih hadiah fisik ke kamu secara langsung tepat di hari ini, tanggal 
+        26 Juni 2026. Aku berencana ngajak kamu ke suatu tempat dan menyiapkan kue ulang tahun dan ngasih 
+        gift secara langsung ke kamu. Tapi, liat kondisi saat ini sepertinya sama sekali ga memungkinkan yaa :') 
+        Mungkin sekarang kamu udah di tahap bener-bener risih, takut, atau bahkan enggan berkomunikasi sama aku 
+        lagi. Jadi aku cuma bisa ngasih kamu hadiah kecil lewat website yang aku bikin ini. 
+      </p>
+
+      <div class="qris-card">
+        <img src="images/qris.jpg" alt="QRIS Hadiah">
+        <p>Scan QRIS Shopeepay ini ya Mayy. Ada hadiah buat kamu, nominalnya kecil banget kok, karena yang terpenting 
+            adalah catatan ada di dalamnya, jadi tolong banget diterima ya Mayy.
+            Ada pesan kecil yang pengen kusampein ke kamu di situ. Buat uangnya bisa kamu belikan 
+            apapun yang kamu suka may, entah kue, atau barang yang lagi kamu pengen/butuhin. Itu amanah
+            dari aku yang harus kamu laksanakan May, kamu ga boleh menolaknya. 
+        </p>
+      </div>
+    </section>
+
+    <section class="ending reveal">
+      <p class="overline">With all my heart</p>
+      <h1>Happy Birthday, May Indah Sulistiowati</h1>
+      <p>Semoga hari ini menjadi awal dari banyak kebahagiaan baru dalam hidup kamu.</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
